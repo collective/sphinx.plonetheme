@@ -1,0 +1,9 @@
+===========
+Changes log
+===========
+
+1.0
+===
+
+Initial release, supports Sphinx 0.6.5 and up.
+
