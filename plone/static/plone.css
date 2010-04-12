@@ -231,6 +231,16 @@ p.admonition-title:after {
 
 /* @end */
 
+/* @group Images and Figures */
+
+div.figure p.caption {
+    color: #565656;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* @end */
+
 p.p-versionmodified {
     float:right;
     background-color: #fef49c;
