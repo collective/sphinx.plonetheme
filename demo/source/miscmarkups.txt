@@ -65,6 +65,77 @@ Using ``.. note::``.
    at quam. Integer vitae augue. Curabitur tempor, eros nec placerat porta, eros
    dui tincidunt diam, id bibendum tellus nibh eu orci.
 
+Attention
+---------
+
+Using ``.. attention::``.
+
+.. attention::
+   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris commodo nibh
+   at quam. Integer vitae augue. Curabitur tempor, eros nec placerat porta, eros
+   dui tincidunt diam, id bibendum tellus nibh eu orci.
+
+Caution
+-------
+
+Using ``.. caution::``.
+
+.. caution::
+   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris commodo nibh
+   at quam. Integer vitae augue. Curabitur tempor, eros nec placerat porta, eros
+   dui tincidunt diam, id bibendum tellus nibh eu orci.
+
+Danger
+------
+
+Using ``.. danger::``.
+
+.. danger::
+   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris commodo nibh
+   at quam. Integer vitae augue. Curabitur tempor, eros nec placerat porta, eros
+   dui tincidunt diam, id bibendum tellus nibh eu orci.
+
+Error
+-----
+
+Using ``.. error::``.
+
+.. error::
+   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris commodo nibh
+   at quam. Integer vitae augue. Curabitur tempor, eros nec placerat porta, eros
+   dui tincidunt diam, id bibendum tellus nibh eu orci.
+
+Hint
+----
+
+Using ``.. hint::``.
+
+.. hint::
+   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris commodo nibh
+   at quam. Integer vitae augue. Curabitur tempor, eros nec placerat porta, eros
+   dui tincidunt diam, id bibendum tellus nibh eu orci.
+
+
+Important
+---------
+
+Using ``.. important::``.
+
+.. important::
+   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris commodo nibh
+   at quam. Integer vitae augue. Curabitur tempor, eros nec placerat porta, eros
+   dui tincidunt diam, id bibendum tellus nibh eu orci.
+
+Tip
+---
+
+Using ``.. tip::``.
+
+.. tip::
+   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris commodo nibh
+   at quam. Integer vitae augue. Curabitur tempor, eros nec placerat porta, eros
+   dui tincidunt diam, id bibendum tellus nibh eu orci.
+
 Warning
 -------
 

@@ -1,6 +1,7 @@
 /**
  * Sphinx stylesheet -- Plone theme
- * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ * ********************************
+ * $Id$
  */
 
 @import url("default.css");
@@ -37,6 +38,11 @@ div.footer a {
     text-decoration: underline;
 }
 
+/* ******************************
+   Top and bottom navigation bars
+   ******************************
+*/
+
 div.related {
     background-color: #329fd7;
     line-height: 30px;
@@ -46,6 +52,11 @@ div.related {
 div.related a {
     color: #ffffff;
 }
+
+/* *******
+   Sidebar
+   *******
+*/
 
 div.sphinxsidebar {
 }
@@ -102,16 +113,18 @@ div.sphinxsidebar input {
     font-size: 1em;
 }
 
-/* -- body styles ----------------------------------------------------------- */
+/* ***********
+   Body styles
+   ***********
+*/
 
-a {
+div.body a {
     color: #205c90;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
-a:hover {
+div.body a:hover {
     color: #75ad0a;
-    text-decoration: underline;
 }
 
 div.body p, div.body dd, div.body li, div.body td {
@@ -144,43 +157,40 @@ div.body h1 {
     text-align: center;
 }
 
-div.body h2 {
+div.body h2,
+div.body h3,
+div.body h4,
+div.body h5,
+div.body h6 {
     color:  #444444;
     margin-top: 0.5em;
-    font-size: 1.375em;
+    padding-left: 0.5em;
     letter-spacing: -1px;
+}
+div.body h2 {
+    font-size: 1.375em;
 }
 
 div.body h3 {
-    color:  #444444;
     font-size: 1.125em;
 }
 
-div.body h4 {
-    color:  #444444;
-    font-size: 0.875em;
-}
-
-div.body h5 {
-    color:  #444444;
-    font-size: 0.875em;
-}
-
+div.body h4,
+div.body h5,
 div.body h6 {
-    color:  #444444;
     font-size: 0.875em;
 }
 
 /* @end */
 
-a.headerlink {
+div.body a.headerlink {
     color: #75ad0a;
     font-size: 0.8em;
     padding: 0 4px 0 4px;
     text-decoration: none;
 }
 
-a.headerlink:hover {
+div.body a.headerlink:hover {
     background-color: #75ad0a;
     color: white;
 }
@@ -200,33 +210,78 @@ div.body p, div.body dd, div.body li {
 div.admonition {
     -moz-border-radius: 0.5em;
     -webkit-border-radius: 0.5em;    
+    border: 1px solid #ff6;
     background-color: #ffc;
     clear: left;
 }
 
+div.note,
+div.hint,
+div.tip,
+div.important,
+div.caution,
+div.attention,
+div.danger,
+div.seealso {
+    padding-left: 65px;
+}
+
 div.note {
-    border: 1px solid #ff6;
+    background: #ffc url(note-icon.png) no-repeat scroll left center;
+}
+
+div.hint {
+    background: #ffc url(hint-icon.png) no-repeat scroll left center;
+}
+
+div.tip {
+    background: #ffc url(tip-icon.png) no-repeat scroll left center;
+}
+
+div.important {
+    background: #ffc url(important-icon.png) no-repeat scroll left center;
+}
+
+div.caution {
+    background: #ffc url(caution-icon.png) no-repeat scroll left center;
+}
+
+div.attention {
+    background: #ffc url(attention-icon.png) no-repeat scroll left center;
+}
+
+div.danger {
+    background: #ffc url(danger-icon.png) no-repeat scroll left center;
 }
 
 div.seealso {
-    border: 1px solid #ff6;
+    background: #ffc url(seealso-icon.png) no-repeat scroll left center;
 }
 
-div.topic {
-    background-color: #eee;
+div.error,
+div.warning {
+    border: 1px solid #f66;
+    padding-left: 65px;
+}
+
+div.error {
+    background: #ffc7c7 url(error-icon.png) no-repeat scroll left center;
 }
 
 div.warning {
-    background-color: #ffe4e4;
-    border: 1px solid #f66;
+    background: #ffc7c7 url(warning-icon.png) no-repeat scroll left center;
 }
 
 p.admonition-title {
-    display: inline;
+    display: block;
 }
 
 p.admonition-title:after {
     content: ":";
+}
+
+div.topic {
+    background-color: #eee;
 }
 
 /* @end */
@@ -241,13 +296,15 @@ div.figure p.caption {
 
 /* @end */
 
+
 p.p-versionmodified {
     float:right;
-    background-color: #fef49c;
+    background: #fef49c url(news-icon.png) no-repeat scroll left center;
     -moz-border-radius: 0.5em;
     -webkit-border-radius: 0.5em;
     padding: 0.5em;
     margin-left: 0.5em;
+    padding-left: 70px; // No text over the icon
 }
 
 span.versionmodified {
@@ -270,6 +327,14 @@ div.sidebar {
 
 /* @group Table of contents */
 
+ul.toctree {
+   background-color: #eeeeee;
+   padding-top: 1em;
+   padding-bottom: 1em;
+   -moz-border-radius: 0.5em;
+   -webkit-border-radius: 0.5em;
+}
+
 li.toctree-l1,
 li.toctree-l2,
 li.toctree-l3,
@@ -277,16 +342,10 @@ li.toctree-l4,
 li.toctree-l5,
 li.toctree-l6 {
     list-style-type: none;
-    background-color: #eeeeee;
     font-weight: bold;
+    margin-bottom: 0em !important;
 }
-li.toctree-l2:first-child,
-li.toctree-l3:first-child,
-li.toctree-l4:first-child,
-li.toctree-l5:first-child,
-li.toctree-l6:first-child {
-	margin-top: 1em;
-}
+
 /* @end */
 
 table.footnote {

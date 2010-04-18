@@ -90,3 +90,18 @@ Used in buildout, etc.
    # Some comment
    name = value
    foo = bar
+
+What when pygments is lost:
+
+.. code-block:: cfg
+
+   # Simple comment
+   [default]
+   # 'cfg' mode does not like blank lines
+
+   foo = bar
+   [section]
+   # 'cfg' mode does not like multilines options
+   option =
+       value1
+       value2
