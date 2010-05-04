@@ -353,6 +353,16 @@ table.footnote {
     border-top: 1px solid black;
 }
 
+table.docutils tr:first-child {
+    text-align: center;
+    font-weight: bold;
+}
+
+table.docutils td {
+    padding-left: 1em;
+    padding-right: 1em
+}
+
 /* Boxes from ..inlineinclude:: xxx */
 
 div.highlight pre {
