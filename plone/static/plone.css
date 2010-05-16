@@ -209,7 +209,11 @@ div.body p, div.body dd, div.body li {
 
 div.admonition {
     -moz-border-radius: 0.5em;
-    -webkit-border-radius: 0.5em;    
+    -webkit-border-radius: 0.5em;
+    border-radius: 0.5em;
+    -moz-box-shadow: 10px 10px 5px #888;
+    -webkit-box-shadow: 10px 10px 5px #888;
+    box-shadow: 10px 10px 5px #888;
     border: 1px solid #ff6;
     background-color: #ffc;
     clear: left;
@@ -323,6 +327,10 @@ div.sidebar {
     border: none;
     -moz-border-radius: 0.5em;
     -webkit-border-radius: 0.5em;
+    border-radius: 0.5em; 
+    -moz-box-shadow: 10px 10px 5px #888;
+    -webkit-box-shadow: 10px 10px 5px #888;
+    box-shadow: 10px 10px 5px #888;
 }
 
 /* @group Table of contents */
@@ -333,6 +341,10 @@ ul.toctree {
    padding-bottom: 1em;
    -moz-border-radius: 0.5em;
    -webkit-border-radius: 0.5em;
+   border-radius: 0.5em;
+   -moz-box-shadow: 10px 10px 5px #888;
+   -webkit-box-shadow: 10px 10px 5px #888;
+   box-shadow: 10px 10px 5px #888;
 }
 
 li.toctree-l1,
