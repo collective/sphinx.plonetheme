@@ -9,7 +9,7 @@
 body {
     font-family: Arial,FreeSans,sans-serif;
     font-size: 100%;
-    background-color: #f09;
+    background-color: #329fd7;
     color: #000;
     margin: 0;
     padding: 0;
@@ -44,7 +44,7 @@ div.footer a {
 */
 
 div.related {
-    background-color: #f09;
+    background-color: #329fd7;
     line-height: 30px;
     color: #ffffff;
 }
@@ -67,8 +67,8 @@ div.sphinxsidebar p.logo {
 
 div.sphinxsidebar h3,
 div.sphinxsidebar h4 {
-    background-color: #f09;
-    border-bottom: 1em solid rgb(250,40,117);
+    background-color: #76ad17;
+    border-bottom: 1em solid #63a100;
     color: white;
     font-size: 1em;
     height:  1em;
@@ -209,7 +209,11 @@ div.body p, div.body dd, div.body li {
 
 div.admonition {
     -moz-border-radius: 0.5em;
-    -webkit-border-radius: 0.5em;    
+    -webkit-border-radius: 0.5em;
+    border-radius: 0.5em;
+    -moz-box-shadow: 10px 10px 5px #888;
+    -webkit-box-shadow: 10px 10px 5px #888;
+    box-shadow: 10px 10px 5px #888;
     border: 1px solid #ff6;
     background-color: #ffc;
     clear: left;
@@ -323,6 +327,10 @@ div.sidebar {
     border: none;
     -moz-border-radius: 0.5em;
     -webkit-border-radius: 0.5em;
+    border-radius: 0.5em; 
+    -moz-box-shadow: 10px 10px 5px #888;
+    -webkit-box-shadow: 10px 10px 5px #888;
+    box-shadow: 10px 10px 5px #888;
 }
 
 /* @group Table of contents */
@@ -333,6 +341,10 @@ ul.toctree {
    padding-bottom: 1em;
    -moz-border-radius: 0.5em;
    -webkit-border-radius: 0.5em;
+   border-radius: 0.5em;
+   -moz-box-shadow: 10px 10px 5px #888;
+   -webkit-box-shadow: 10px 10px 5px #888;
+   box-shadow: 10px 10px 5px #888;
 }
 
 li.toctree-l1,
@@ -351,6 +363,16 @@ li.toctree-l6 {
 table.footnote {
     width: 100%;
     border-top: 1px solid black;
+}
+
+table.docutils tr:first-child {
+    text-align: center;
+    font-weight: bold;
+}
+
+table.docutils td {
+    padding-left: 1em;
+    padding-right: 1em
 }
 
 /* Boxes from ..inlineinclude:: xxx */
