@@ -2,6 +2,11 @@
 Changes log
 ===========
 
+SVN trunk
+=========
+
+* Changes due to upgrade to Sphinx 1.x
+
 1.1
 ===
 

@@ -22,8 +22,7 @@ $(document).ready(function () {
     $('ul:has(li.toctree-l1)').addClass('toctree');
 
     // Decorate links to other sites
-    $('a[@href^="http://"]').addClass('exit').attr('target', '_blank');
-    $('a[@href^="https://"]').addClass('exit').attr('target', '_blank');
+    $('a[class~=external]').attr('target', '_blank');
 
     // Glossary terms
     $('em.xref').attr('title', _('See the definition'));
