@@ -292,6 +292,9 @@ div.topic {
 
 /* @group Images and Figures */
 
+div.figure img {
+    border: 2px outset #329FD7;
+}
 div.figure p.caption {
     color: #565656;
     font-weight: bold;
@@ -360,20 +363,24 @@ li.toctree-l6 {
 
 /* @end */
 
+/* @group Tables */
+
 table.footnote {
     width: 100%;
     border-top: 1px solid black;
 }
 
-table.docutils tr:first-child {
-    text-align: center;
-    font-weight: bold;
+table.docutils th {
+	background-color: #76AD17;
+	text-align: center;
 }
 
 table.docutils td {
     padding-left: 1em;
     padding-right: 1em
 }
+
+/* @end */
 
 /* Boxes from ..inlineinclude:: xxx */
 
