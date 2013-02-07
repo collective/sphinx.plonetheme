@@ -7,62 +7,51 @@ About
 
 This is a theme for Sphinx that provides a nice plone.org like HTML output.
 
-Requirements
-============
-
-You need `Sphinx <http://sphinx.pocoo.org/>`_ and all its
-requirements. So, follow instructions from this site to install sphinx your own
-way.
-
-Of course, you'e supposed to know how to play with Sphinx. Otherwise learn from
-the `Sphinx documentation <http://sphinx.pocoo.org/contents.html>`_ and come
-back here later.
-
-The first version of ``sphinx.plonetheme`` has been developed with Sphinx
-0.6.5. It's not tested with earlier versions. Please read HISTORY.txt for
-support of later versions of Sphinx.
-
 Installation
 ============
 
-Create a new Sphinx or go to an existing Sphinx, then, ``cd`` to the directory
-that contains your Sphinx's ``conf.py`` (so called "configuration directory" in
-Sphinx documentation)
+Make environment with easy_install::
 
-Export with SVN the appropriate version of ``sphinx.plonetheme`` in your own themes directory::
+   $ easy_install sphinxjp.themes.impressjs
 
-  $ mkdir _themes
-  $ cd _themes
-  $ svn export \
-    http://svn.plone.org/svn/collective/sphinx.plonetheme/tags/xxx/plone \
-    plone
+Or using buildout::
 
-You may prefer the trunk at your own risks.
+    [buildout]
+    parts=
+        sphinx
+    
+    [sphinx]
+    recipe=zc.recipe.egg
+    eggs=
+        Sphinx
+        sphinx.plonetheme
 
-Configuring your Sphinx
-=======================
+setup conf.py with::
 
-Edit your Sphinx's ``conf.py``::
-
-  ...
-  html_theme_path = ['_themes']
-  ...
-  html_theme = 'plone'
-
-Other optional settings in ``conf.py``::
-
-  ...
-  # The same favicon as plone.org
-  html_favicon = 'favicon.ico'
-  ...
-  # Opensearch support with Plone icon
-  html_use_opensearch = 'http://my.site.tld/mydoc'
-  ...
-  # Have a disqus setting for this site to have visitors feedback?
-  # (register at http://disqus.com/)
-  html_theme_options = {
+   extensions = ['sphinxjp.themecore']
+   html_theme = 'plonetheme'
+   # Opensearch support with Plone icon
+   html_use_opensearch = 'http://my.site.tld/mydoc'
+   ...
+   # Have a disqus setting for this site to have visitors feedback?
+   # (register at http://disqus.com/)
+   html_theme_options = {
       'disqus_name': 'the_disqus_site_shortname'
-      }
+   }
+
+
+and run::
+
+   $ make html
+
+
+Requirement
+===========
+
+Libraries:
+
+* Python 2.6 or later (not support 3.x)
+* Sphinx 1.0.x or later.
 
 Tested with...
 ==============
@@ -75,9 +64,10 @@ Tested with...
 Contributing
 ============
 
-Point your subversion client to
-https://svn.plone.org/svn/collective/sphinx.plonetheme/trunk (yes you're
-propably in since you read this file)
+Fork or being part of the plone collective organization::
+
+    https://github.com/collective/sphinx.plonetheme
+
 
 The ``demo/`` folder is the Sphinx I use to test this theme. You may add
 more Sphinx constructs to test the Plone Sphinx theme here.
@@ -85,17 +75,11 @@ more Sphinx constructs to test the Plone Sphinx theme here.
 More doc about Sphinx theming can be found from `here
 <http://sphinx.pocoo.org/theming.html>`_.
 
-Not an egg
-==========
-
-At the moment because Sphinx does not have ``PasteScript`` like plugin support
-for new themes. So making this component an egg is useless (for now).
-
 Credits
 =======
 
 * `Gilles Lenfant <gilles.lenfant@gmail.com>`_
-* (Whoever helps can write his/her name and mail here)
+* `Jean-Michel FRANCOIS <toutpt@gmail.com>`_
 
 Copyright and license
 =====================

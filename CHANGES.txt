@@ -2,13 +2,13 @@
 Changes log
 ===========
 
-SVN trunk
-=========
+2.0 (unreleased)
+================
 
-* Changes due to upgrade to Sphinx 1.x
+* eggified using sphinxjp.themecore
 
-1.1
-===
+1.1 (unreleased)
+================
 
 * Adding graphics to the admonition markups
   [glenfant]
@@ -27,8 +27,8 @@ SVN trunk
 * https links are considered externals too
   [glenfant]
 
-1.0
-===
+1.0 (unreleased)
+================
 
 * Initial release, supports Sphinx 0.6.5 and up.
   [glenfant]
