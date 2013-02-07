@@ -1,5 +1,4 @@
 from setuptools import setup, find_packages
-import os
 
 version = '1.0'
 
@@ -7,7 +6,7 @@ setup(name='sphinx.plonetheme',
       version=version,
       description="Addon for Plone",
       long_description=open("README.rst").read() + "\n" +
-                       open(os.path.join("docs", "HISTORY.txt")).read(),
+                       open("CHANGES.txt").read(),
       # Get more strings from
       # http://pypi.python.org/pypi?:action=list_classifiers
       classifiers=[
@@ -28,9 +27,12 @@ setup(name='sphinx.plonetheme',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'sphinxjp.themecore',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
       # -*- Entry points: -*-
+      [sphinx_themes]
+      path = sphinx.plonetheme:get_path
       """,
       )
